@@ -9,7 +9,7 @@ import (
 
 func Calc(expression string) (float64, error) {
 	expression = strings.ReplaceAll(expression, " ", "")
-
+ 
 	rpn, err := toRPN(expression)
 	if err != nil {
 		return 0, err
